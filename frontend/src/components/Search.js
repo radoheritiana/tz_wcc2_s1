@@ -22,7 +22,7 @@ const Search = () => {
         }
         setTimeout(() => {
             document.getElementById('loader').classList = "loader-container d-none";
-        }, 2000)
+        }, 4000)
     }, []);
 
     const getPays = async () => {
@@ -51,9 +51,9 @@ const Search = () => {
         var query = '';
         if (window.sessionStorage.getItem("token")) {
             if (location !== undefined) {
-                query = 'http://localhost:5000/users?name=' + encodeURI(username) + '&page=' + current_page;
+                query = 'https://rhja.pythonanywhere.com/users?name=' + encodeURI(username) + '&page=' + current_page;
                 if (username !== undefined) {
-                    query = 'http://localhost:5000/users?name=' + encodeURI(username) + '&country=' + encodeURI(location) + '&page=' + current_page;
+                    query = 'https://rhja.pythonanywhere.com/users?name=' + encodeURI(username) + '&country=' + encodeURI(location) + '&page=' + current_page;
                 }
             }
         } else {

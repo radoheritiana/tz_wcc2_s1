@@ -18,7 +18,7 @@ body {
   height: 100vh;
   position: fixed;
   background: rgba(0, 0, 0, 0.9)
-      url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center
+      url("./loading.gif") center
       no-repeat;
   z-index: 1;
 }

@@ -2,7 +2,7 @@
 const Token = () => {
     const getToken = async (value) => {
         const requete = await fetch(
-            'http://localhost:5000/token?code='+value
+            'https://rhja.pythonanywhere.com/token?code='+value
         )
         const response = await requete.json();
         window.sessionStorage.setItem('token', response.token);
