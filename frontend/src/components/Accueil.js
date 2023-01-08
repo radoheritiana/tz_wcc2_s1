@@ -14,7 +14,8 @@ export default class Accueil extends Component {
                         <div className="col text-center">
                             <h4>If you have a github acount</h4>
                             <a className="btn btn-warning mt-3 mb-3" 
-                            href="https://github.com/login/oauth/authorize?client_id=Iv1.3557116d6bcf2043">
+                            href="https://github.com/login/oauth/authorize?client_id=Iv1.3557116d6bcf2043"
+                            disabled=true>
                                 Click here
                             </a>
                             <p><b>Advantage: </b>limit of requests per minute : 30</p>
